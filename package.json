@@ -1,5 +1,6 @@
 {
   "name": "frontend-test-boilerplate",
+  "homepage": "https://carlosqsilva.github.io/frontend-test-boilerplate/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,6 +12,7 @@
     "@types/react-dom": "16.9.4",
     "@types/react-router-dom": "^5.1.2",
     "@types/react-transition-group": "^4.2.3",
+    "gh-pages": "^2.1.1",
     "lodash.debounce": "^4.0.8",
     "mobx": "^5.15.0",
     "mobx-react": "^6.1.4",
@@ -26,16 +28,16 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
   },
   "browserslist": {
     "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
+      "last 2 chrome version"
     ],
     "development": [
       "last 1 chrome version",

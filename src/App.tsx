@@ -7,7 +7,7 @@ import store from "./store";
 import { Home } from "./pages";
 
 export default () => (
-  <BrowserRouter>
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
     <Provider {...store}>
       <Switch>
         <Route exact path="/" component={Home} />
