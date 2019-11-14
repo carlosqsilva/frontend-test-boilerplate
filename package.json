@@ -1,14 +1,26 @@
 {
-  "name": "test-front",
+  "name": "frontend-test-boilerplate",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "mobx": "4.8.0",
-    "mobx-react": "^5.4.3",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-router-dom": "^5.0.0",
-    "react-scripts": "2.1.8"
+    "@emotion/core": "^10.0.22",
+    "@emotion/styled": "^10.0.23",
+    "@types/jest": "24.0.23",
+    "@types/node": "12.12.7",
+    "@types/react": "16.9.11",
+    "@types/react-dom": "16.9.4",
+    "@types/react-router-dom": "^5.1.2",
+    "@types/react-transition-group": "^4.2.3",
+    "lodash.debounce": "^4.0.8",
+    "mobx": "^5.15.0",
+    "mobx-react": "^6.1.4",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-icons": "^3.8.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.2.0",
+    "react-transition-group": "^4.3.0",
+    "typescript": "3.7.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -19,13 +31,16 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
-  "devDependencies": {
-    "mobx-remotedev": "^0.3.6"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
